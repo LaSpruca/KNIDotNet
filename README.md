@@ -1,26 +1,24 @@
-<h1 style="text-align: center">KNI-RS</h1>
-<h6 style="text-align: center">A rust interface for getting notices from KAMAR </h6>
+<h1 style="text-align: center">KNIDotNet</h1>
+<h6 style="text-align: center">A DotNet interface for getting notices from KAMAR </h6>
 <div style="width: fit-content; margin: auto; display: flex; flex-direction: row;">
     <a style="padding: 10px;">
         <img src="https://travis-ci.com/LaSpruca/KNIDotNet.svg?branch=main" alt="Build status">
     </a>
 </div>
 
-This is an iterface for accessing the KAMAR API in rust to retrieve the notices
+This is an iterface for accessing the KAMAR API in DotNet to retrieve the notices
 
 Example Usage:
 
-```rust
-use kni_rs::Portal;
+```c#
+using LaSpruca.KNIDotNet;
 
-#[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let portal = Portal::new("https://demo.school.kiwi");
-    let notices = protal.get_notices_today().await?;
-
-    println!("Notices: {:?}", notices);
-
-    Ok(())
+public class Application {
+       public static async Task Main() {
+            var portal = new Portal("https://demo.school.kiwi/");
+            var result = await portal.GetNotices(DateTime.Now());
+            Console.WriteLine(result.ToString()); 
+       }    
 }
 ```
 
