@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace LaSpruca.KNIDotNet {
     public class Portal {
         private readonly string _key;
-        private readonly string _address;
         private HttpClient httpClient = new HttpClient();
 
         public Portal(string address) {
