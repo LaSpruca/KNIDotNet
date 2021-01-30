@@ -16,5 +16,13 @@ namespace LaSpruca.KNIDotNetTests {
             Console.WriteLine(data);
             Assert.Pass();
         }
+        
+        [Test]
+        public async Task TestGetNoticesInvalidKey() {
+            var portal = new Portal("https://demo.school.kiwi/", "hentai");
+            var data = await portal.GetNotices(DateTime.Now);
+            Console.WriteLine(data);
+            Assert.Pass();
+        }
     }
 }

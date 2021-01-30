@@ -32,6 +32,8 @@ namespace LaSpruca.KNIDotNet {
                         new KeyValuePair<string, string>("Command", "GetNotices"),
                         new KeyValuePair<string, string>("Date", $"{date.Day}/{date.Month}/{date.Year}")
                     }));
+            
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
 
             return (NoticesResponse) new XmlSerializer(typeof(NoticesResponse)).Deserialize(await response.Content.ReadAsStreamAsync());
         }
