@@ -2,6 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Title>KNI DotNet</Title>
+        <Authors>Nathan Hare &lt;LaSpruca&gt;</Authors>
+        <Description>A simple way to get kamar notices in dotnet </Description>
+        <Copyright>Nathan Hare 2021</Copyright>
+        <PackageProjectUrl>https://github.com/laspruca/KNIDotNet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/laspruca/KNIDotNet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
 </Project>

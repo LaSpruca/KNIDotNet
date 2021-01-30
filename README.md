@@ -4,6 +4,9 @@
     <a style="padding: 10px;">
         <img src="https://travis-ci.com/LaSpruca/KNIDotNet.svg?branch=main" alt="Build status">
     </a>
+    <a style="padding: 10px;">
+        <img src="https://img.shields.io/nuget/v/LaSpruca.KNIDotNet" alt="Build status">
+    </a>
 </div>
 
 This is an iterface for accessing the KAMAR API in DotNet to retrieve the notices
@@ -17,8 +20,8 @@ public class Application {
        public static async Task Main() {
             var portal = new Portal("https://demo.school.kiwi/");
             var result = await portal.GetNotices(DateTime.Now());
-            Console.WriteLine(result.ToString()); 
-       }    
+            Console.WriteLine(result.ToString());
+       }
 }
 ```
 
