@@ -2,7 +2,7 @@
 <h6 style="text-align: center">A DotNet interface for getting notices from KAMAR </h6>
 <div style="width: fit-content; margin: auto; display: flex; flex-direction: row;">
     <a style="padding: 10px;">
-        <img src="https://travis-ci.com/LaSpruca/KNIDotNet.svg?branch=main" alt="Build status">
+        <img src="https://www.travis-ci.com/LaSpruca/KNIDotNet.svg?branch=master" alt="Build status">
     </a>
     <a style="padding: 10px;">
         <img src="https://img.shields.io/nuget/v/LaSpruca.KNIDotNet" alt="Build status">
